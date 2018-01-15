@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">JenJava</string>
+    <string name="name">Jméno</string>
+    <string name="toppings">Přídavky</string>
+    <string name="whipped_cream">Šlehačka</string>
+    <string name="chocolate">Čokoláda</string>
+    <string name="quantity">Množství</string>
+    <string name="order">Objednat</string>
+    <string name="order_summary_name">"Jméno: "<xliff:g id="name" example="Amy">%s</xliff:g></string>
+    <string name="order_summary_quantity">"Množství: "<xliff:g id="quantity" example="3">%d</xliff:g></string>
+    <string name="thank_you">Děkujeme!</string>
+    <string name="order_summary_email_subject">"Objednávka kávy pro <xliff:g id="name" example="Amy">%s</xliff:g>"</string>
+    <string name="initial_quantity">1</string>
+    <string name="order_whipped_cream">"Šlehačka? "<xliff:g id="hasWhippedCream" example="true">%s</xliff:g></string>
+    <string name="order_chocolate">"Čokoláda? "<xliff:g id="hasChocolate" example="true">%s</xliff:g></string>
+    <string name="order_summary_total">Celkem: $<xliff:g id="price" example="10">%d</xliff:g></string>
+    <string name="falseText">Ne</string>
+    <string name="trueText">Ano</string>
+    <string name="toast_max_order">Minimální objednávka je  1 káva</string>
+    <string name="toast_min_order">Maximální objednávka je 100 káv.</string>
+</resources>
