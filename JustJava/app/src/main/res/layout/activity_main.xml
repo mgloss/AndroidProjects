@@ -25,6 +25,7 @@
             android:orientation="vertical">
 
             <EditText
+                style="@style/leftMargin"
                 android:id="@+id/name"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -32,6 +33,7 @@
                 android:inputType="textCapWords" />
 
             <TextView
+                style="@style/leftMargin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -41,6 +43,7 @@
                 android:textSize="16sp" />
 
             <CheckBox
+                style="@style/leftMargin"
                 android:id="@+id/whipped_cream"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -50,6 +53,7 @@
                 android:textSize="16sp" />
 
             <CheckBox
+                style="@style/leftMargin"
                 android:id="@+id/chocolate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -59,6 +63,7 @@
                 android:textSize="16sp" />
 
             <TextView
+                style="@style/leftMargin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -73,6 +78,7 @@
                 android:layout_height="wrap_content">
 
                 <Button
+                    style="@style/leftMargin"
                     android:id="@+id/decrement_button"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
@@ -100,6 +106,7 @@
             </LinearLayout>
 
             <Button
+                style="@style/leftMargin"
                 android:id="@+id/order_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

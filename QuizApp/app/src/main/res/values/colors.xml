@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#AD1457</color>
+    <color name="colorBackgroundQuestion">#EC407A</color>
+    <color name="colorPrimaryDark">#880E4F</color>
+    <color name="colorAccent">#EC407A</color>
+    <color name="colorBackgroundBasic">#FCE4EC</color>
+    <color name="text_color_primary">#FCE4EC</color>
+    <color name="black">#000000</color>
+    <color name="colorSubmitButton">#666699</color>
+    <drawable name="bt_normal_color">#F06292</drawable>
+    <drawable name="bt_press_color">#880E4F</drawable>
+
+</resources>

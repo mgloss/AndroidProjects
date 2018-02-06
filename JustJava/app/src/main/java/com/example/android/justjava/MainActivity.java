@@ -18,23 +18,26 @@ import android.widget.Toast;
  */
 public class MainActivity extends AppCompatActivity {
     private int quantity = 1;
+    private TextView quantityTextView;
+    private CheckBox whippedCreamCheckbox;
+    private CheckBox chocolateCheckbox;
+    private EditText name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        quantityTextView = findViewById(R.id.quantity_text_view);
+        whippedCreamCheckbox = findViewById(R.id.whipped_cream);
+        chocolateCheckbox = findViewById(R.id.chocolate);
+        name = findViewById(R.id.name);
     }
 
     /**
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-
-        CheckBox whippedCreamCheckbox = (CheckBox) findViewById(R.id.whipped_cream);
-        CheckBox chocolateCheckbox = (CheckBox) findViewById(R.id.chocolate);
-        EditText name = (EditText) findViewById(R.id.name);
         String customerName = name.getText().toString();
-
         //check current state of a check boxes (true or false)
         boolean hasWhippedCream = whippedCreamCheckbox.isChecked();
         boolean hasChocolate = chocolateCheckbox.isChecked();
@@ -135,7 +138,6 @@ public class MainActivity extends AppCompatActivity {
      * This method displays the given quantity value on the screen.
      */
     private void displayQuantity(int something) {
-        TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + something);
     }
 

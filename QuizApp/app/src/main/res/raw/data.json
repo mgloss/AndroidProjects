@@ -1,0 +1,96 @@
+[
+  {
+    "questionName": "How can you kill the ostrich?",
+    "answers": [
+      {
+        "text": "With axe.",
+        "value": false
+      },
+      {
+        "text": "By starring at him.",
+        "value": false
+      },
+     {
+        "text": "Scare him on the concrete path.",
+        "value": true
+      }
+    ]
+  },
+  {
+    "questionName": "Why do the brides wear white?",
+    "answers": [
+      {
+        "text": "Because white is standard color of home appliances.",
+        "value": true
+      },
+      {
+        "text": "White means innocence.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "questionName": "How do you know you have free space only on right side of hard disk?",
+    "answers": [
+      {
+        "text": "Left side is heavier.",
+        "value": false
+      },
+      {
+        "text": "There is an info  message: No space left on the device.",
+        "value": true
+      }
+    ]
+  },
+  {
+    "questionName": "What is it called if you get the sauce and also its recipe in the restaurant?",
+    "answers": [
+      {
+        "text": "I dont know",
+        "value": false
+      },
+      {
+        "text": "Open Sauce",
+        "value": true
+      }
+    ]
+  },
+  {
+    "questionName": "What is the difference between teabag and Slavia (Czech football team)?",
+    "answers": [
+      {
+        "text": "There is no difference",
+        "value": false
+      },
+      {
+        "text": "The teabag stays longer in the cup.",
+        "value": true
+      }
+    ]
+  },
+  {
+    "questionName": "Why is Google like women?",
+    "answers": [
+      {
+        "text": "That is not true",
+        "value": false
+      },
+      {
+        "text": "They are both finishing your sentences.",
+        "value": true
+      }
+    ]
+  }
+
+]
+
+
+
+
+
+
+
+
+
+
+
