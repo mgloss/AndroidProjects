@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Goalball Counter</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="goal">goal</string>
+    <string name="penalty_goal">penalty goal</string>
+    <string name="penalty">penalty</string>
+    <string name="zero">0</string>
+    <string name="reset">reset</string>
 </resources>

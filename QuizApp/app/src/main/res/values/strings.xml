@@ -1,16 +1,11 @@
 <resources>
     <string name="app_name">Noncorrect humour quiz app</string>
-    <string name="question_1">1. Question</string>
-    <string name="answer_1a">A. </string>
-    <string name="answer_1b">B. </string>
-    <string name="answer_1c">C. </string>
-    <string name="answer_1d">D. </string>
-    <string name="question_2">2. Question</string>
-    <string name="answer_2a">A. </string>
-    <string name="answer_2b">B. </string>
-    <string name="answer_2c">C. </string>
-    <string name="answer_2d">D. </string>
     <string name="submit_button">SUBMIT</string>
+    <string name="name">Your name</string>
+    <string name="checkbox_question">Why are you taking this quiz?</string>
+    <string name="checkbox1">I want to have fun.</string>
+    <string name="checkbox2">I have a lot of free time, so why not.</string>
+    <string name="checkbox3">My mom/boss/colleague told me to take this quiz.</string>
 
 
 </resources>

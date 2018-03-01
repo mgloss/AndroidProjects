@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <dimen name="team_text_size">14sp</dimen>
+    <dimen name="basic_padding">4dp</dimen>
+    <dimen name="button_margin_LR">24dp</dimen>
+    <dimen name="button_margin_top">10dp</dimen>
+    <dimen name="small_score_text_size">35sp</dimen>
+    <dimen name="big_score_text_size">56sp</dimen>
+    <dimen name="view_layout_width">1dp</dimen>
+    <dimen name="view_layout_marginTop">16dp</dimen>
+    <dimen name="linear_layout_width">0dp</dimen>
+    <dimen name="submit_button_marginBottom">5dp</dimen>
+</resources>

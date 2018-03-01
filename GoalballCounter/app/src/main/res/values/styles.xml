@@ -2,8 +2,49 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Primary theme color of the app (sets background color of app bar) -->
-        <item name="colorPrimary">#b942f4</item>
-        <!-- Background color of buttons in the app -->
-        <item name="colorButtonNormal">#b942f4</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+    <!-- Style for team texts. -->
+    <style name="team_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/basic_padding</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:textColor">@color/color_score</item>
+        <item name="android:textSize">@dimen/team_text_size</item>
+    </style>
+    <!-- Style for the big scorecard. -->
+    <style name="big_score">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/basic_padding</item>
+        <item name="android:text">@string/zero</item>
+        <item name="android:textColor">@color/color_score</item>
+        <item name="android:textSize">@dimen/big_score_text_size</item>
+    </style>
+    <!-- Style fot the small scorecards. -->
+    <style name="small_score">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/basic_padding</item>
+        <item name="android:text">@string/zero</item>
+        <item name="android:textColor">@color/color_score</item>
+        <item name="android:textSize">@dimen/small_score_text_size</item>
+    </style>
+    <!-- Style for all buttons. -->
+    <style name="button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/button_margin_LR</item>
+        <item name="android:layout_marginRight">@dimen/button_margin_LR</item>
+        <item name="android:layout_marginTop">@dimen/button_margin_top</item>
+        <item name="android:textColor">@color/color_text_button</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textAllCaps">true</item>
     </style>
 </resources>

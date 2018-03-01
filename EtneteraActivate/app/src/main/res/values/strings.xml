@@ -1,0 +1,23 @@
+<resources>
+    <string name="info">Jsme nadšenci do dat a online byznysu. Není dne, kdy bysme nezkoušeli nové nástroje a postupy.
+        Vymýšlíme, jak lépe změřit nebo vytěžit a následně využít data ke zlepšení klientova byznysu, jak navrhnout web nebo aplikaci
+    nebo jak vylepšit e-mailingové kampaně. A také rádi zkoumáme, co chtějí klientovi zákazníci a jak klientům lépe personalizovat obsah.</string>
+    <string name="app_name">Etnetera Activate</string>
+    <string name="proc">Proč kopat za náš tým?</string>
+    <string name="contact">Kontakt</string>
+    <string name="address">Classic 7 - budova E
+    \nJankovcova 1037/49
+    \n170 00 Praha 7</string>
+
+    <string name="phone">Zavolej nám</string>
+    <string name="email">Napiš nám</string>
+    <string name="blog">Blog</string>
+    <string name="jobs">Nabídky práce</string>
+    <string name="reason_1">&amp;  máš hlas</string>
+    <string name="reason_2">&amp;  zůstaneš svobodný</string>
+    <string name="reason_3">&amp;  budeš se cítit opojený</string>
+    <string name="reason_4">&amp;  dostaneš přísun nového</string>
+    <string name="reason_5">&amp;  bereš, co si zasloužíš</string>
+    <string name="hintPhone">Telefonní číslo</string>
+    <string name="hintEmail">E-mail</string>
+</resources>

@@ -1,13 +1,18 @@
 package com.example.android.quizapp;
 
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.content.res.Resources.NotFoundException;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.renderscript.ScriptGroup;
 import android.support.v7.app.AppCompatActivity;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -26,13 +31,18 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     List<Question> questions = new ArrayList<>();
     private int quizScore = 0;
+    private EditText nameInput;
+    private String name;
+    private SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        nameInput = findViewById(R.id.name);
         LinearLayout mainLayout = (LinearLayout) findViewById(R.id.linear_layout);
+
 
         try {
 
@@ -107,9 +117,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void onClick(RadioButton radioButton) {
+        sharedPreferences.edit().putBoolean("bntChecked", radioButton.isChecked()).apply();
+    }
     public void submit() {
         quizScore = 0;
+        name = nameInput.getText().toString();
         LinearLayout mainLayout = (LinearLayout) findViewById(R.id.linear_layout);
+        CheckBox checkbox3 = (CheckBox) findViewById(R.id.checkbox3);
 
         Question question = null;
         Answer answer = null;
@@ -117,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < mainLayout.getChildCount(); i++) {
 
             View child = mainLayout.getChildAt(i);
-            if (child instanceof TextView && child instanceof Button == false) {
+            if (child instanceof TextView && !(child instanceof Button)) {
                 question = questions.get(i / 2);
             }
 
@@ -134,8 +149,36 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
+        if (checkbox3.isChecked()) {
 
-        Toast.makeText(this, "You have " + quizScore + " correct answers in total.", Toast.LENGTH_SHORT).show();
+
+            if (quizScore < 2) {
+                Toast.makeText(this, name + ", it looks like you are from England.\n" +
+                        "You have " + quizScore + " correct answers in total.\n" +
+                        "I like you mom/boss/colleage!", Toast.LENGTH_SHORT).show();
+            } else if (quizScore < 5) {
+                Toast.makeText(this, name + ", I bet you are not in the mood today.\n" +
+                        "Try it again!\n" +
+                        "You have " + quizScore + " correct answers in total.\n" +
+                        "I like you mom/boss/colleage!", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, "Great " + name + "! You have the right sense of humour!\n" +
+                        "You have " + quizScore + " correct answers in total.\n" +
+                        "I like you mom/boss/colleage!", Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            if (quizScore < 2) {
+                Toast.makeText(this, name + ", it looks like you are from England.\n" +
+                        "You have " + quizScore + " correct answers in total.", Toast.LENGTH_SHORT).show();
+            } else if (quizScore < 5) {
+                Toast.makeText(this, name + ", I bet you are not in the mood today.\n" +
+                        "Try it again!\n" +
+                        "You have " + quizScore + " correct answers in total.", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, "Great " + name + "! You have the right sense of humour!\n" +
+                        "You have " + quizScore + " correct answers in total.", Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 
 }
