@@ -35,7 +35,7 @@ public class NumberActivity extends AppCompatActivity {
 
 
 
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, R.layout.list_item, words);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
